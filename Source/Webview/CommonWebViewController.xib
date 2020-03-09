@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonWebViewController" customModule="CommonUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="MeI-gQ-Ct8" id="raC-aH-C9o"/>
+                <outlet property="loadingProgressView" destination="Rri-LE-uV6" id="86x-Kg-hen"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Rri-LE-uV6">
+                    <rect key="frame" x="0.0" y="20" width="375" height="2"/>
+                    <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </progressView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MeI-gQ-Ct8">
+                    <rect key="frame" x="0.0" y="22" width="375" height="645"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="6Ax-TG-121" firstAttribute="trailing" secondItem="MeI-gQ-Ct8" secondAttribute="trailing" id="1WS-WE-JXa"/>
+                <constraint firstItem="Rri-LE-uV6" firstAttribute="top" secondItem="6Ax-TG-121" secondAttribute="top" id="2C4-Mr-bhR"/>
+                <constraint firstItem="6Ax-TG-121" firstAttribute="trailing" secondItem="Rri-LE-uV6" secondAttribute="trailing" id="6px-wx-3sy"/>
+                <constraint firstItem="6Ax-TG-121" firstAttribute="bottom" secondItem="MeI-gQ-Ct8" secondAttribute="bottom" id="ECb-IS-8Me"/>
+                <constraint firstItem="MeI-gQ-Ct8" firstAttribute="top" secondItem="Rri-LE-uV6" secondAttribute="bottom" id="FYT-rV-gl3"/>
+                <constraint firstItem="Rri-LE-uV6" firstAttribute="leading" secondItem="6Ax-TG-121" secondAttribute="leading" id="NXT-TW-KoH"/>
+                <constraint firstItem="MeI-gQ-Ct8" firstAttribute="leading" secondItem="6Ax-TG-121" secondAttribute="leading" id="ckg-aN-ucG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="6Ax-TG-121"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

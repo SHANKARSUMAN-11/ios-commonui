@@ -1,0 +1,155 @@
+{
+    "Button" : {
+        "borderWidth": 1.0,
+        "cornerRadius" : 5.0,
+        "types" : [
+            {
+                "buttonType": 0,
+                "borderColor": "#41c3ff00",
+                "backgroundColor" : "#0095da",
+                "tintColor": "#ffffff"
+            },
+            {
+                "buttonType": 1,
+                "borderColor": "#41c3ff",
+                "backgroundColor" : "#0eb3ff00",
+                "tintColor": "#41c3ff"
+            },
+            {
+                "buttonType": 2,
+                "borderColor": "#41c3ff00",
+                "backgroundColor" : "#0eb3ff00",
+                "tintColor": "#41c3ff"
+            },
+            {
+                "buttonType": 3,
+                "borderColor": "#41c3ff00",
+                "backgroundColor" : "#f1f1f1",
+                "tintColor": "#959595"
+            }
+        ]
+    },
+    "TextField" : {
+        "backgroundColor" : "#f7faff00",
+        "textColor" : "#000000",
+        "borderColor": "#e0e0e0",
+        "separatorColor": "#ff000000",
+        "separatorHeight": 1.0,
+        "borderWidth": 1.0,
+        "cornerRadius" : 5.0,
+        "shadowWidth": 1.0,
+        "placeholder": "",
+        "placeholderTextColor": "#0095da",
+        "helperTextColor": "#b7b7b7"
+    },
+    "TextView" : {
+        "backgroundColor" : "#8bc63f",
+        "textColor" : "#123456",
+        "borderColor": "#ed1c24",
+        "borderWidth": 1.0,
+        "cornerRadius" : 8.0,
+        "shadowWidth": 1.0,
+        "placeholder": "Label Text",
+        "placeholderTextColor": "#bdbdbd",
+        "helperTextColor": "#bdbdbd"
+    },
+    "Bubble" : {
+        "backgroundColor" : "#ffffff",
+        "textColor" : "#41c3ff",
+        "selectedTextColor" : "#ffffff",
+        "selectedBackgroundColor" : "#daf3ff",
+        "borderColor": "#41c3ff",
+        "borderWidth": 1.0,
+        "cornerRadius" : 16.0,
+        "shadowWidth": 1.0,
+        "shadowOpacity": 0.5
+    },
+    "Ticker" : {
+        "borderWidth": 0.0,
+        "cornerRadius" : 8.0,
+        "shadowWidth": 0.0,
+        "shadowOpacity": 0.5,
+        "types" : [
+            {
+                "tickerType": 0,
+                "borderColor": "#41c3ff00",
+                "backgroundColor" : "#f1f1f1",
+                "texColor": "#ef3b42"
+            },
+            {
+                "tickerType": 1,
+                "borderColor": "#41c3ff00",
+                "backgroundColor" : "#daf3ff",
+                "texColor": "#000000"
+            },
+            {
+                "tickerType": 2,
+                "borderColor": "#41c3ff",
+                "backgroundColor" : "#daedc2",
+                "texColor": "#000000"
+            },
+            {
+                "tickerType": 3,
+                "borderColor": "#41c3ff00",
+                "backgroundColor" : "#fde2c2",
+                "texColor": "#000000"
+            },
+            {
+                "tickerType": 4,
+                "borderColor": "#41c3ff00",
+                "backgroundColor" : "#f9b9bc",
+                "texColor": "#000000"
+            }
+        ]
+    },
+    "MultiSelect" : {
+        "backgroundColor" : "#ffffff",
+        "textColor" : "#000000",
+        "selectedTextColor" : "#0eb3ff",
+        "imageTintColor" : "#000000",
+        "selectedImageTintColor" : "#0eb3ff",
+        "borderColor": "#ffffff00",
+        "borderWidth": 0.0,
+        "cornerRadius" : 0.0,
+        "shadowWidth": 0.0,
+        "shadowOpacity": 0.0
+    },
+    "Alert" : {
+        "backgroundColor" : "#ffffff",
+        "titleColor" : "#41c3ff",
+        "descriptionColor" : "#a9a9a9",
+        "borderColor": "#41c3ff00",
+        "borderWidth": 0.0,
+        "cornerRadius" : 8.0,
+        "shadowWidth": 0.0,
+        "shadowOpacity": 0.5,
+        
+        "status" : [
+        {
+            "type": "info",
+            "statusColor": "#41c3ff",
+            "statusImage": "info",
+            "imageTint": "#41c3ff"
+        },
+        {
+            "type": "error",
+            "statusColor": "#ef3b42",
+            "statusImage": "error"
+        },
+        {
+            "type": "warning",
+            "statusColor": "#f8a33f",
+            "statusImage": "warning",
+            "imageTint": "#f8a33f"
+        },
+        {
+            "type": "success",
+            "statusColor": "#9bce59",
+            "statusImage": "add",
+            "imageTint": "#9bce59"
+        }
+        ]
+    }
+}
+
+

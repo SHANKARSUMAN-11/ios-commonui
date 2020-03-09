@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTicker" customModule="CommonUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="R6n-Va-mZF" id="QhG-TH-RV2"/>
+                <outlet property="leftButton" destination="s0V-56-ryq" id="inZ-le-gGr"/>
+                <outlet property="leftButtonLeadingConstraint" destination="scr-8T-v2v" id="VK2-k4-zdB"/>
+                <outlet property="leftButtonWidth" destination="43z-Fi-3Ay" id="ZuJ-eZ-gU1"/>
+                <outlet property="rightButton" destination="N2U-Nb-kmW" id="Ma3-eJ-t92"/>
+                <outlet property="rightButtonTrailingConstraint" destination="vBZ-tA-JZa" id="YWJ-Pn-B5V"/>
+                <outlet property="rightButtonWidth" destination="byS-RK-D6W" id="DYC-rf-gah"/>
+                <outlet property="titleLabel" destination="Q87-NT-yff" id="XkQ-RZ-IFQ"/>
+                <outlet property="view" destination="LCV-Kh-1l8" id="W3P-3i-nNX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LCV-Kh-1l8">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="263"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0V-56-ryq" userLabel="Left Button">
+                    <rect key="frame" x="16" y="119.5" width="24" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="43z-Fi-3Ay"/>
+                        <constraint firstAttribute="width" secondItem="s0V-56-ryq" secondAttribute="height" multiplier="1:1" id="65b-vR-jCc"/>
+                    </constraints>
+                    <connections>
+                        <action selector="didTapLeftButton:" destination="-1" eventType="touchUpInside" id="yLJ-nR-D2U"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q87-NT-yff">
+                    <rect key="frame" x="50" y="8" width="275" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6n-Va-mZF">
+                    <rect key="frame" x="50" y="8" width="275" height="247"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2U-Nb-kmW" userLabel="Right Button">
+                    <rect key="frame" x="335" y="119.5" width="24" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="byS-RK-D6W"/>
+                        <constraint firstAttribute="width" secondItem="N2U-Nb-kmW" secondAttribute="height" multiplier="1:1" id="lxB-ZR-apD"/>
+                    </constraints>
+                    <connections>
+                        <action selector="didTapRightButton:" destination="-1" eventType="touchUpInside" id="a75-WK-Npu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Q87-NT-yff" firstAttribute="top" secondItem="RPA-OV-Oo4" secondAttribute="top" constant="8" id="GBs-ZS-3N7"/>
+                <constraint firstItem="Q87-NT-yff" firstAttribute="leading" secondItem="s0V-56-ryq" secondAttribute="trailing" constant="10" id="JyF-98-RYX"/>
+                <constraint firstItem="RPA-OV-Oo4" firstAttribute="bottom" secondItem="R6n-Va-mZF" secondAttribute="bottom" constant="8" id="MZD-YV-1TE"/>
+                <constraint firstItem="s0V-56-ryq" firstAttribute="centerY" secondItem="RPA-OV-Oo4" secondAttribute="centerY" priority="250" id="O2j-uc-90V"/>
+                <constraint firstItem="N2U-Nb-kmW" firstAttribute="leading" secondItem="Q87-NT-yff" secondAttribute="trailing" constant="10" id="OTb-Jh-U0m"/>
+                <constraint firstItem="N2U-Nb-kmW" firstAttribute="centerY" secondItem="RPA-OV-Oo4" secondAttribute="centerY" priority="250" id="gVt-Bk-d2y"/>
+                <constraint firstItem="R6n-Va-mZF" firstAttribute="top" secondItem="Q87-NT-yff" secondAttribute="bottom" id="irh-bV-3ut"/>
+                <constraint firstItem="N2U-Nb-kmW" firstAttribute="leading" secondItem="R6n-Va-mZF" secondAttribute="trailing" constant="10" id="m2X-c5-uQg"/>
+                <constraint firstItem="R6n-Va-mZF" firstAttribute="leading" secondItem="s0V-56-ryq" secondAttribute="trailing" constant="10" id="ohe-fG-dIh"/>
+                <constraint firstItem="s0V-56-ryq" firstAttribute="leading" secondItem="RPA-OV-Oo4" secondAttribute="leading" constant="16" id="scr-8T-v2v"/>
+                <constraint firstItem="RPA-OV-Oo4" firstAttribute="trailing" secondItem="N2U-Nb-kmW" secondAttribute="trailing" constant="16" id="vBZ-tA-JZa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="RPA-OV-Oo4"/>
+            <point key="canvasLocation" x="172" y="-236.13193403298354"/>
+        </view>
+    </objects>
+</document>

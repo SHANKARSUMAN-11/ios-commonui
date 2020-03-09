@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DropDownTableViewCell" id="01M-9J-EHY" customClass="DropDownTableViewCell" customModule="CommonUIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="01M-9J-EHY" id="5WS-7b-5ET">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwQ-kq-ymn">
+                        <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q64-sf-tAO" customClass="CustomSelect" customModule="CommonUIKit" customModuleProvider="target">
+                                <rect key="frame" x="-8" y="-8" width="375" height="43.5"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q64-sf-tAO" firstAttribute="top" secondItem="bwQ-kq-ymn" secondAttribute="top" constant="-8" id="BEd-iG-cDN"/>
+                            <constraint firstAttribute="trailing" secondItem="q64-sf-tAO" secondAttribute="trailing" constant="-8" id="ds1-g4-9SQ"/>
+                            <constraint firstAttribute="bottom" secondItem="q64-sf-tAO" secondAttribute="bottom" constant="-8" id="sFi-Ik-4OV"/>
+                            <constraint firstItem="q64-sf-tAO" firstAttribute="leading" secondItem="bwQ-kq-ymn" secondAttribute="leading" constant="-8" id="xI7-JO-vAV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bwQ-kq-ymn" secondAttribute="trailing" constant="8" id="0IG-kS-w2P"/>
+                    <constraint firstItem="bwQ-kq-ymn" firstAttribute="top" secondItem="5WS-7b-5ET" secondAttribute="top" constant="8" id="ZYJ-sJ-hTZ"/>
+                    <constraint firstItem="bwQ-kq-ymn" firstAttribute="leading" secondItem="5WS-7b-5ET" secondAttribute="leading" constant="8" id="cVv-hK-xaw"/>
+                    <constraint firstAttribute="bottom" secondItem="bwQ-kq-ymn" secondAttribute="bottom" constant="8" id="yiP-xz-FB0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backgroundView_" destination="bwQ-kq-ymn" id="oqz-gS-aeK"/>
+                <outlet property="customSelect" destination="q64-sf-tAO" id="MBq-gN-sLr"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

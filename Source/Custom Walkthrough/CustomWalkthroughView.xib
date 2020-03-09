@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Effra-Std-Rg.ttf">
+            <string>Effra-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomWalkthroughView" customModule="CommonUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="countLabel" destination="Aok-hK-NcA" id="VC6-E3-jy3"/>
+                <outlet property="leftButton" destination="kKr-E1-QsR" id="iod-Vz-xiZ"/>
+                <outlet property="masterView" destination="cGV-jH-8x7" id="W2v-6f-uzf"/>
+                <outlet property="rightButton" destination="3EC-G5-La4" id="10h-t6-LDe"/>
+                <outlet property="titleLabel" destination="KMU-55-imw" id="ZTz-1U-g54"/>
+                <outlet property="view" destination="fyH-0e-VKe" id="w8D-ei-WkD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fyH-0e-VKe">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-jH-8x7">
+                    <rect key="frame" x="0.0" y="390" width="414" height="116"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMU-55-imw">
+                            <rect key="frame" x="24" y="24" width="366" height="0.0"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="We4-QK-7ZC">
+                            <rect key="frame" x="0.0" y="48" width="221" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKr-E1-QsR" customClass="CustomButton" customModule="CommonUIKit" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="0.0" width="87" height="44"/>
+                                    <fontDescription key="fontDescription" name="Effra-Regular" family="Effra" pointSize="17"/>
+                                    <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                    <state key="normal" title="Got it!"/>
+                                    <connections>
+                                        <action selector="didTapLeftButton:" destination="-1" eventType="touchUpInside" id="icL-86-FOQ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EC-G5-La4" customClass="CustomButton" customModule="CommonUIKit" customModuleProvider="target">
+                                    <rect key="frame" x="121" y="0.0" width="76" height="44"/>
+                                    <fontDescription key="fontDescription" name="Effra-Regular" family="Effra" pointSize="17"/>
+                                    <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                    <state key="normal" title="Next"/>
+                                    <connections>
+                                        <action selector="didTapRightButton:" destination="-1" eventType="touchUpInside" id="QiO-Nr-vbc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="3EC-G5-La4" secondAttribute="bottom" id="2iX-dh-fhE"/>
+                                <constraint firstItem="kKr-E1-QsR" firstAttribute="top" secondItem="We4-QK-7ZC" secondAttribute="top" id="ARM-ql-7aK"/>
+                                <constraint firstItem="kKr-E1-QsR" firstAttribute="leading" secondItem="We4-QK-7ZC" secondAttribute="leading" constant="24" id="BAv-yg-hEc"/>
+                                <constraint firstAttribute="height" constant="44" id="PfL-UR-Zl6"/>
+                                <constraint firstItem="3EC-G5-La4" firstAttribute="top" secondItem="We4-QK-7ZC" secondAttribute="top" id="TZT-iv-tYX"/>
+                                <constraint firstAttribute="trailing" secondItem="3EC-G5-La4" secondAttribute="trailing" constant="24" id="VzB-GQ-IbL"/>
+                                <constraint firstItem="3EC-G5-La4" firstAttribute="leading" secondItem="kKr-E1-QsR" secondAttribute="trailing" constant="10" id="aUy-7w-Dyo"/>
+                                <constraint firstAttribute="bottom" secondItem="kKr-E1-QsR" secondAttribute="bottom" id="zU3-z7-QJ6"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aok-hK-NcA">
+                            <rect key="frame" x="390" y="70" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KMU-55-imw" firstAttribute="top" secondItem="cGV-jH-8x7" secondAttribute="top" constant="24" id="2go-fg-mcG"/>
+                        <constraint firstItem="We4-QK-7ZC" firstAttribute="leading" secondItem="cGV-jH-8x7" secondAttribute="leading" priority="750" id="6Cv-QV-lS1"/>
+                        <constraint firstItem="We4-QK-7ZC" firstAttribute="top" secondItem="KMU-55-imw" secondAttribute="bottom" constant="24" id="QHR-h9-78P"/>
+                        <constraint firstItem="KMU-55-imw" firstAttribute="leading" secondItem="cGV-jH-8x7" secondAttribute="leading" constant="24" id="RSp-bb-gcK"/>
+                        <constraint firstItem="Aok-hK-NcA" firstAttribute="centerY" secondItem="We4-QK-7ZC" secondAttribute="centerY" id="S5T-Hj-9bb"/>
+                        <constraint firstItem="Aok-hK-NcA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="We4-QK-7ZC" secondAttribute="trailing" constant="8" symbolic="YES" id="eTk-Y4-c8U"/>
+                        <constraint firstAttribute="bottom" secondItem="We4-QK-7ZC" secondAttribute="bottom" constant="24" id="kPZ-G7-3bT"/>
+                        <constraint firstAttribute="trailing" secondItem="KMU-55-imw" secondAttribute="trailing" constant="24" id="ugU-eL-DwW"/>
+                        <constraint firstAttribute="trailing" secondItem="Aok-hK-NcA" secondAttribute="trailing" constant="24" id="y8F-DW-5fS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cGV-jH-8x7" firstAttribute="leading" secondItem="fyH-0e-VKe" secondAttribute="leading" priority="750" id="58e-Lc-zrd"/>
+                <constraint firstItem="cGV-jH-8x7" firstAttribute="centerX" secondItem="fyH-0e-VKe" secondAttribute="centerX" priority="750" id="N6U-Dz-sCK"/>
+                <constraint firstAttribute="trailing" secondItem="cGV-jH-8x7" secondAttribute="trailing" priority="750" id="nMC-gd-dtY"/>
+                <constraint firstItem="cGV-jH-8x7" firstAttribute="centerY" secondItem="fyH-0e-VKe" secondAttribute="centerY" priority="250" id="pgY-g2-Efd"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="775"/>
+        </view>
+    </objects>
+</document>

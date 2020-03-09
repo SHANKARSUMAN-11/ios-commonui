@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomBubble" customModule="CommonUIKit" customModuleProvider="target">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="leftButton" destination="o2k-cM-LyX" id="Fxk-aV-EjL"/>
+                <outlet property="leftButtonLeadingConstraint" destination="08a-Tj-b9Z" id="srZ-Q2-Sqp"/>
+                <outlet property="leftButtonWidth" destination="65u-mc-zm7" id="Doa-fb-Qii"/>
+                <outlet property="leftSeparator" destination="0z2-Ha-HfZ" id="ZAi-V7-uMb"/>
+                <outlet property="leftSeparatorWidth" destination="WLP-Ix-n24" id="rNY-8U-65E"/>
+                <outlet property="mainButton" destination="LNT-j9-Uv0" id="VMR-Et-CpW"/>
+                <outlet property="rightButton" destination="CWO-V0-K0V" id="APa-x5-aC6"/>
+                <outlet property="rightButtonTrailingConstraint" destination="WbS-dt-Ow1" id="DPa-hW-yAT"/>
+                <outlet property="rightButtonWidth" destination="zdp-qe-oHk" id="yBF-1a-Shz"/>
+                <outlet property="view" destination="iN0-l3-epB" id="5sZ-EF-USK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="803" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2k-cM-LyX" userLabel="Left Button">
+                    <rect key="frame" x="16" y="105.5" width="16" height="16"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="65u-mc-zm7"/>
+                        <constraint firstAttribute="height" constant="16" id="ryW-ah-nBU"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapLeftButton:" destination="-1" eventType="touchUpInside" id="BLn-sm-o54"/>
+                    </connections>
+                </button>
+                <view hidden="YES" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0z2-Ha-HfZ">
+                    <rect key="frame" x="36" y="0.0" width="1.5" height="227"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1.5" id="WLP-Ix-n24"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-j9-Uv0" userLabel="Main Button">
+                    <rect key="frame" x="42" y="0.0" width="719" height="227"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="didTapMainButton:" destination="-1" eventType="touchUpInside" id="Giv-0Z-ESb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWO-V0-K0V" userLabel="Right Button">
+                    <rect key="frame" x="771" y="105.5" width="16" height="16"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="duv-cZ-PhJ"/>
+                        <constraint firstAttribute="width" constant="16" id="zdp-qe-oHk"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didTapRightButton:" destination="-1" eventType="touchUpInside" id="n7W-G6-K6K"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="o2k-cM-LyX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="08a-Tj-b9Z"/>
+                <constraint firstItem="LNT-j9-Uv0" firstAttribute="leading" secondItem="o2k-cM-LyX" secondAttribute="trailing" constant="10" id="5IQ-RM-ayb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0z2-Ha-HfZ" secondAttribute="bottom" id="8YG-P0-h1q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LNT-j9-Uv0" secondAttribute="bottom" id="8i9-H1-xyP"/>
+                <constraint firstItem="o2k-cM-LyX" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Dph-rq-FZa"/>
+                <constraint firstItem="0z2-Ha-HfZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="KI2-w8-B0v"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CWO-V0-K0V" secondAttribute="trailing" constant="16" id="WbS-dt-Ow1"/>
+                <constraint firstItem="0z2-Ha-HfZ" firstAttribute="leading" secondItem="o2k-cM-LyX" secondAttribute="trailing" constant="4" id="cch-3R-oTx"/>
+                <constraint firstItem="CWO-V0-K0V" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="kyZ-u7-NWz"/>
+                <constraint firstItem="CWO-V0-K0V" firstAttribute="leading" secondItem="LNT-j9-Uv0" secondAttribute="trailing" constant="10" id="lGh-44-nbS"/>
+                <constraint firstItem="LNT-j9-Uv0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="scQ-Ra-fRs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-204" y="-58.920539730134934"/>
+        </view>
+    </objects>
+</document>
